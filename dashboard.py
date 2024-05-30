@@ -95,7 +95,7 @@ class StockDashboard:
             st.write('Fundamental')
             st.subheader('Balance Sheet')
             balance_sheet = get_fundamental_data(
-                self.ticker, alpha_vantage_api_key
+                self.ticker, st.secrets['ALPHA_VANTAGE_API_KEY']
             )
             st.write(balance_sheet)
 
